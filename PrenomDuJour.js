@@ -12,7 +12,7 @@ function prenomJour (data, client) {
 	fetch('https://nameday.abalin.net/api/V1/today')
     .then(response => response.json())
     .then(reponse2 =>  {
-    Avatar.speak(`Aujoud'hui nous fétons le prénom de ${reponse2.nameday.fr}`, data.client, function(){
+    Avatar.speak(`Aujoud'hui nous fétons le prénom de ${reponse2.nameday.fr}`, data.client, () => {
 	Avatar.Speech.end(data.client);
 	});
 })
