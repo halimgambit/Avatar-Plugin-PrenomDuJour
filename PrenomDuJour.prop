@@ -3,14 +3,6 @@
 		"PrenomDuJour": {
 			"version": "1.0",
 			"name": "fetesdeprénom",
-			"tts": {
-				"Salon": "J'ai allumé la lumière",
-				"Cuisine": "J'ai allumé les spots"
-			},
-			"clients": {
-				"Salon": 60,
-				"Cuisine": 50
-			},
 			"rules": ["(first|1) * name","name * day"]
 		}
 	}
